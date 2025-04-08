@@ -15,8 +15,8 @@ class TestContent(TestCase):
     def setUpTestData(cls):
         cls.user = User.objects.create(username='Залогиненный пользователь')
         cls.note = Note.objects.create(
-            title='lox',
-            text='plox',
+            title='tit',
+            text='tet',
             author=cls.user
         )
 
