@@ -38,7 +38,7 @@ class TestRoutes(TestCase):
                 self.assertEqual(response.status_code, HTTPStatus.OK)
 
     def test_available_for_authors(self):
-        urls = ('notes:list', 'notes:add')
+        urls = ('notes:list', 'notes:add', 'notes:success')
         for name in urls:
             with self.subTest(name=name):
                 self.client.force_login(self.author)
